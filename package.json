@@ -1,0 +1,58 @@
+{
+  "name": "portare-areu-continuita-assistenziale",
+  "version": "1.0.0",
+  "description": "PORTARE AREU Continuità Assistenziale - Ex Guardia Medica 116117",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "dev:frontend": "npm run dev -w packages/frontend",
+    "dev:backend": "npm run dev -w packages/backend",
+    "build": "npm run build --workspaces",
+    "build:frontend": "npm run build -w packages/frontend",
+    "build:backend": "npm run build -w packages/backend",
+    "test": "npm run test --workspaces",
+    "test:frontend": "npm run test -w packages/frontend",
+    "test:backend": "npm run test -w packages/backend",
+    "test:watch": "npm run test:watch --workspaces",
+    "lint": "npm run lint --workspaces",
+    "lint:fix": "npm run lint:fix --workspaces",
+    "type-check": "npm run type-check --workspaces",
+    "start": "npm run start --workspaces",
+    "start:frontend": "npm run start -w packages/frontend",
+    "start:backend": "npm run start -w packages/backend",
+    "clean": "npm run clean --workspaces && rm -rf node_modules",
+    "install-all": "npm install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "prettier": "^3.1.1",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "ts-jest": "^29.1.1",
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.5"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "healthcare",
+    "continuita-assistenziale",
+    "guardia-medica",
+    "116117",
+    "areu",
+    "portare"
+  ],
+  "author": "Chrimanna2006",
+  "license": "MIT"
+}
